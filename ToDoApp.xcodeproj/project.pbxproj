@@ -58,6 +58,7 @@
 		DF8532D72B62986D00629436 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8532D62B62986D00629436 /* TLButton.swift */; };
 		DF8532D92B629F4200629436 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DF8532D82B629F4200629436 /* .gitignore */; };
 		DF8532DB2B62A06700629436 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DF8532DA2B62A06700629436 /* README.md */; };
+		DFA4D0F42B6309C5006D0DF9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA4D0F32B6309C5006D0DF9 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		DF8532D62B62986D00629436 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
 		DF8532D82B629F4200629436 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		DF8532DA2B62A06700629436 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DFA4D0F32B6309C5006D0DF9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +211,7 @@
 				DF8532792B627F6200629436 /* GoogleService-Info.plist */,
 				DF85326F2B627D7700629436 /* Assets.xcassets */,
 				DF85326B2B627D7700629436 /* ToDoAppApp.swift */,
+				DFA4D0F32B6309C5006D0DF9 /* Extensions.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				DF8532CB2B62871100629436 /* ToDoListViewViewModel.swift in Sources */,
 				DF8532CF2B62872F00629436 /* LoginViewViewModel.swift in Sources */,
 				DF85326C2B627D7700629436 /* ToDoAppApp.swift in Sources */,
+				DFA4D0F42B6309C5006D0DF9 /* Extensions.swift in Sources */,
 				DF8532C52B62869700629436 /* ToDoListItem.swift in Sources */,
 				DF8532BB2B6285ED00629436 /* NewItemView.swift in Sources */,
 				DF8532CD2B62872300629436 /* NewItemViewViewModel.swift in Sources */,
@@ -474,9 +478,11 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "To Do List";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -503,9 +509,11 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "To Do List";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

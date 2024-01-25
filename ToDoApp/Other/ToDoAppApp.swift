@@ -8,10 +8,15 @@
 import FirebaseCore
 
 import SwiftUI
+import Firebase
 
 @main
 struct ToDoAppApp: App {
+    
     init(){
+        let providerFactory = AppCheckDebugProviderFactory()
+        AppCheck.setAppCheckProviderFactory(providerFactory)
+        
         FirebaseApp.configure()
     }
     

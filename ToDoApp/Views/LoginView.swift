@@ -5,12 +5,13 @@
 //  Created by Jacek Myjkowski on 25/01/2024.
 //
 
+
+
 import SwiftUI
 
 struct LoginView: View {
+    @StateObject var viewModel = LoginViewViewModel()
     
-    @State var email = ""
-    @State var password = ""
     
     var body: some View {
         NavigationView{
@@ -18,34 +19,45 @@ struct LoginView: View {
                 //Header
                 HeaderView(title: "To Do List", subtitle: "Get things done", angle: 15, backgroundColor: .pink)
                 
+                
+                
                 //Login Form
                 Form{
-                    TextField("Email Address", text: $email)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .autocorrectionDisabled()
-                        .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
+                    if !viewModel.errorMessage.isEmpty{
+                        Text(viewModel.errorMessage)
+                            .foregroundColor(.red)
+                    }
                     
-                    SecureField("Password", text: $password)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    TextField("Email Address", text: $viewModel.email)
+                        .textFieldStyle(DefaultTextFieldStyle())
+                        .autocorrectionDisabled()
+                        .autocapitalization(.none)
+                    
+                    SecureField("Password", text: $viewModel.password)
+                        .textFieldStyle(DefaultTextFieldStyle())
                     
                     TLButton(title: "Log In", backgroundColor: .blue){
-                        //Attempt to log in
+                        viewModel.login()
                     }
+                    .padding()
                 }
                 .offset(y:-50)
                 
                 
+                
+                
                 //Create Account
                 
-                VStack{
-                    Text("New here?")
-                    NavigationLink("Create An Account", destination: RegisterView())
-                }
-                .padding(.bottom, 50)
+                Text("New here?")
+                NavigationLink("Create An Account", destination: RegisterView())
                 
                 Spacer()
             }
+            
+            
+            
         }
+        
     }
 }
 
