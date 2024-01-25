@@ -57,6 +57,7 @@
 		DF8532D52B628DEF00629436 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8532D42B628DEF00629436 /* HeaderView.swift */; };
 		DF8532D72B62986D00629436 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8532D62B62986D00629436 /* TLButton.swift */; };
 		DF8532D92B629F4200629436 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DF8532D82B629F4200629436 /* .gitignore */; };
+		DF8532DB2B62A06700629436 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DF8532DA2B62A06700629436 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 		DF8532D42B628DEF00629436 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		DF8532D62B62986D00629436 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
 		DF8532D82B629F4200629436 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		DF8532DA2B62A06700629436 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 				DF8532B22B6284AB00629436 /* Views */,
 				DF8532712B627D7700629436 /* Preview Content */,
 				DF8532D82B629F4200629436 /* .gitignore */,
+				DF8532DA2B62A06700629436 /* README.md */,
 			);
 			path = ToDoApp;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			files = (
 				DF8532D92B629F4200629436 /* .gitignore in Resources */,
 				DF8532732B627D7700629436 /* Preview Assets.xcassets in Resources */,
+				DF8532DB2B62A06700629436 /* README.md in Resources */,
 				DF8532702B627D7700629436 /* Assets.xcassets in Resources */,
 				DF85327A2B627F6200629436 /* GoogleService-Info.plist in Resources */,
 			);
