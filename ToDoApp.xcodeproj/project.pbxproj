@@ -129,6 +129,7 @@
 		DF85325F2B627D7700629436 = {
 			isa = PBXGroup;
 			children = (
+				DF8532DA2B62A06700629436 /* README.md */,
 				DF85326A2B627D7700629436 /* ToDoApp */,
 				DF8532692B627D7700629436 /* Products */,
 			);
@@ -151,7 +152,6 @@
 				DF8532B22B6284AB00629436 /* Views */,
 				DF8532712B627D7700629436 /* Preview Content */,
 				DF8532D82B629F4200629436 /* .gitignore */,
-				DF8532DA2B62A06700629436 /* README.md */,
 			);
 			path = ToDoApp;
 			sourceTree = "<group>";
